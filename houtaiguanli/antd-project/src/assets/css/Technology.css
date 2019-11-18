@@ -1,0 +1,38 @@
+.underline {
+    border: 1px solid #ccc;
+}
+
+.content {
+    width: 1000px;
+    margin-top: 50px;
+}
+
+.sexname {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+.name {
+    border: 1px solid #fff;
+    background-Color: #9391925c;
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+.content_ques{
+    display: inline-block; 
+    padding-top: 30px;
+    margin-left: 300px;
+    margin-right: 20px;
+    color: red;
+    font-size: 20px;
+}

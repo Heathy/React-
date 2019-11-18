@@ -8,24 +8,30 @@ import {
 } from "react-router-dom";
 // 匿名投诉
 import Complaint from '../../components/Complaint/Complaint'
+// 技术问题
+import Technology from '../../components/Technology/Technology'
+// 项目上传
+import Project from '../../components/Project/Project'
+// VIP
+import VIP from '../../components/VIP/VIP'
+// 订单管理
+import Indent from '../../components/Indent/Indent'
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 const Acontent = () => {
+    
     return (
         <Content style={{ padding: '0 14px' }}>
             <Breadcrumb style={{ margin: '16px 0' }}>
-                <Breadcrumb.Item>Home</Breadcrumb.Item>
-                <Breadcrumb.Item>List</Breadcrumb.Item>
-                <Breadcrumb.Item>App</Breadcrumb.Item>
+                <Breadcrumb.Item>首页</Breadcrumb.Item>
+                <Breadcrumb.Item>侧栏</Breadcrumb.Item>
+                <Breadcrumb.Item>内容</Breadcrumb.Item>
             </Breadcrumb>
             <Layout style={{ padding: '4px 0', background: '#fff' }}>
                 <Sider width={180} style={{ background: '#fff' }}>
-                    <Menu
-                        mode="inline"
-                        defaultSelectedKeys={['1']}
-                        defaultOpenKeys={['sub1']}
-                        style={{ height: '100%' }}
-                    >
+                     <div className="logo" />
+                    <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+            
                         <SubMenu
                             key="sub1"
                             title={
@@ -79,7 +85,7 @@ const Acontent = () => {
                             <Menu.Item key="12"><Link to="/nav1/option12">地图</Link></Menu.Item>
                             <Menu.Item key="13"><Link to="/nav1/option13">饼图</Link></Menu.Item>
                             <Menu.Item key="14"><Link to="/nav1/option14">雷达图</Link></Menu.Item>
-                            <Menu.Item key="15"><Link to="/nav1/option14">k线图</Link></Menu.Item>
+                            <Menu.Item key="15"><Link to="/nav1/option15">k线图</Link></Menu.Item>
                         </SubMenu>
                         <SubMenu
                             key="sub5"
@@ -90,13 +96,13 @@ const Acontent = () => {
                                 </span>
                             }
                         >
-                            <Menu.Item key="10"><Link to="/nav1/option10">银行卡管理</Link></Menu.Item>
-                            <Menu.Item key="11"><Link to="/nav1/option11">充值记录</Link></Menu.Item>
-                            <Menu.Item key="12"><Link to="/nav1/option12">支付方式</Link></Menu.Item>
-                            <Menu.Item key="13"><Link to="/nav1/option13">用户资金管理</Link></Menu.Item>
+                            <Menu.Item key="16"><Link to="/nav1/option16">银行卡管理</Link></Menu.Item>
+                            <Menu.Item key="17"><Link to="/nav1/option17">充值记录</Link></Menu.Item>
+                            <Menu.Item key="18"><Link to="/nav1/option18">支付方式</Link></Menu.Item>
+                            <Menu.Item key="19"><Link to="/nav1/option19">用户资金管理</Link></Menu.Item>
                         </SubMenu>
                         <SubMenu
-                            key="sub5"
+                            key="sub6"
                             title={
                                 <span>
                                     <Icon type="Administrator" />
@@ -104,13 +110,13 @@ const Acontent = () => {
                                 </span>
                             }
                         >
-                            <Menu.Item key="14"><Link to="/nav1/option14">发货管理</Link></Menu.Item>
-                            <Menu.Item key="15"><Link to="/nav1/option15">网点管理</Link></Menu.Item>
-                            <Menu.Item key="16"><Link to="/nav1/option16">退货管理</Link></Menu.Item>
-                            <Menu.Item key="17"><Link to="/nav1/option17">快递单号查询</Link></Menu.Item>
+                            <Menu.Item key="20"><Link to="/nav1/option20">发货管理</Link></Menu.Item>
+                            <Menu.Item key="21"><Link to="/nav1/option21">网点管理</Link></Menu.Item>
+                            <Menu.Item key="22"><Link to="/nav1/option22">退货管理</Link></Menu.Item>
+                            <Menu.Item key="23"><Link to="/nav1/option23">快递单号查询</Link></Menu.Item>
                         </SubMenu>
                         <SubMenu
-                            key="sub5"
+                            key="sub7"
                             title={
                                 <span>
                                     <Icon type="Administrator" />
@@ -118,26 +124,29 @@ const Acontent = () => {
                                 </span>
                             }
                         >
-                            <Menu.Item key="18"><Link to="/nav1/option18">应收/预付款项</Link></Menu.Item>
-                            <Menu.Item key="19"><Link to="/nav1/option19">现金流管理</Link></Menu.Item>
-                            <Menu.Item key="20"><Link to="/nav1/option20">产出成本/费用支出</Link></Menu.Item>
-                            <Menu.Item key="21"><Link to="/nav1/option21">企业年终预算</Link></Menu.Item>
+                            <Menu.Item key="24"><Link to="/nav1/option24">应收/预付款项</Link></Menu.Item>
+                            <Menu.Item key="25"><Link to="/nav1/option25">现金流管理</Link></Menu.Item>
+                            <Menu.Item key="26"><Link to="/nav1/option26">产出成本/费用支出</Link></Menu.Item>
+                            <Menu.Item key="27"><Link to="/nav1/option27">企业年终预算</Link></Menu.Item>
                         </SubMenu>
                     </Menu>
                 </Sider>
-                <Content style={{ padding: '0 14px', minHeight: 280 }}>
+                <Content style={{ padding: '0 14px', minHeight: 180 }}>
                     <Switch>
                         <Route path="/nav1/option1">
                             <Complaint />
                         </Route>
                         <Route path="/nav1/option2">
-                            <div>option2</div>
+                            <Technology />
                         </Route>
                         <Route path="/nav1/option3">
-                            <div>option3</div>
+                            <Project />
                         </Route>
                         <Route path="/nav1/option4">
-                            <div>option4</div>
+                            <VIP />
+                        </Route>
+                        <Route path="/nav1/option5">
+                            <Indent />
                         </Route>
                     </Switch>
                 </Content>
@@ -153,14 +162,14 @@ export default class Alayout extends React.Component {
             <Router>
                 <Layout>
                     <Header className="header" style={{
-                        height: '50px'
+                        height: '65px'
                     }}>
                         <div className="logo" />
                         <Menu
                             theme="dark"
                             mode="horizontal"
                             defaultSelectedKeys={['2']}
-                            style={{ lineHeight: '50px' }}
+                            style={{ lineHeight: '65px' }}
                         >
                             <Menu.Item key="1">
                                 <Link to="/nav1">学生管理</Link>

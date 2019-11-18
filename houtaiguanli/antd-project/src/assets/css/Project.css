@@ -1,0 +1,90 @@
+.update {
+    font-size: 30px;
+    margin-left: 500px;
+    font-family:  KaiTi;
+}
+
+.timeList {
+    display: bloak;
+    margin-left: 30px;
+}
+
+.plans {
+    width: 130px;
+    font-size: 20px;
+    margin-left: 80px;
+    animation: changeBg 2s linear infinite alternate;
+}
+
+ @keyframes changeBg {
+    0% {
+      background-color: #ed5564;
+    }
+    10% {
+      background-color: #fb6e52;
+    }
+    20% {
+      background-color: #ffce55;
+    }
+    30% {
+      background-color: #a0d468;
+    }
+    40% {
+      background-color: #48cfae;
+    }
+    50% {
+      background-color: #4fc0e8;
+    }
+    60% {
+      background-color: #5d9cec;
+    }
+    70% {
+      background-color: #ac92ed;
+    }
+    80% {
+      background-color: #ec87bf;
+    }
+    90% {
+      background-color: #ed5564;
+    }
+  }
+
+  .overtime {
+      /* display: fixed;
+      float: left;
+      top: -500px;
+      right: 30px;
+      width:500px; */
+      
+  }
+  
+  .goplan {
+    position: absolute;
+    top: 231px;
+    right: 289px;
+    width: 659px;
+    height: 341px;
+    border: 10px solid #58bc58;
+    border-radius: 74px;
+    box-shadow: 2px 3px 5px 5px #0000004a;
+}
+
+.ant-avatar > img {
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.dianzan {
+  position: absolute;
+  width: 200px;
+  top: 499px;
+  right: 232px;
+}
+
+.hope {
+  font-size: 22px;
+  margin-left: 220px;
+}
