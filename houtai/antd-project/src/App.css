@@ -1,0 +1,29 @@
+.reacticon{
+    background: url(/static/media/KDpgvguMpGfqaHPjicRK.b29324c4.svg) no-repeat;
+    height: 85;
+    position: absolute;
+    right: 384px;
+    top: 0px;
+    z-index: 1000;
+    width: 50px;
+    background-size: contain;
+    filter: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    margin-top: 5px;
+}
+
+.antdicon {
+    background: url(/static/media/react.8e26f220.svg) no-repeat;
+    height: 85;
+    position: absolute;
+    left: 837px;
+    top: 0px;
+    z-index: 1000;
+    width: 50px;
+    background-size: contain;
+    filter: none;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    margin-top: 5px;
+}

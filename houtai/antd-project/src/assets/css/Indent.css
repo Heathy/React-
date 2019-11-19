@@ -1,0 +1,173 @@
+.Rightbox {
+    background-color: #e2dede;
+    height: 100%;
+}
+
+.headerbox {
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 560;
+
+}
+
+.span1 {
+    padding-right: 10px;
+}
+
+.span2 {
+    padding-left: 10px;
+}
+
+.selectbox {
+    width: 90%;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    float: left;
+}
+
+.selectleft_input {
+    margin-left: 34px;
+    padding: 5px 0px;
+}
+
+.product {
+    font-size: 15px;
+    color: #000;
+    margin-right: 30px;
+}
+
+.classify {
+    font-size: 15px;
+    color: #000;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.selmuen {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #ccc;
+    margin-left: 443px;
+    margin-top: -30px;
+}
+
+.search {
+    height: 97%;
+    width: 50px;
+    background-color:#d87b28d9;
+    margin-left: 993px;
+    margin-top: -41px;
+
+}
+
+.fromgood {
+    width: 90%;
+    height: 310px;
+    background-color: #fff;
+    margin-top: 43px;
+    margin-left: 40px;
+    margin-right: 40px;
+    float: left;
+}
+
+.frgood {
+    margin-top: 20px;
+    margin-left: 27px;
+    font-size: 19px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.gooddel {
+    width: 85px;
+    height: 30px;
+    background: #ff4c4cf2;
+    margin-left: 213px;
+    margin-top: -26px;
+}
+
+.goodadd {
+    width: 71px;
+    height: 30px;
+    background: #4f7de3f2;
+    margin-left: 954px;
+    margin-top: -31px;
+}
+
+.pages {
+    position: absolute;
+    top: 561px;
+    right: 193px;
+}
+
+.InquireSelectTable {
+    margin: 20px 10px 0 10px;
+    overflow: auto;
+    max-height: 179px;
+}
+
+.PublicTableCss {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+}
+
+.PublicTableCss thead {
+    background: #e2e2e2;
+}
+
+tr {
+    margin: 0px;
+    outline: medium none;
+    background: none;
+    padding: 0px;
+    font-family: Arial,"微软雅黑";
+    border: 0 none;
+    font-style: normal;
+}
+
+.PublicTableCss thead tr td {
+    max-width: 135px;
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    white-space: nowrap;
+}
+
+.PublicTableCss tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.PublicTableCss tbody tr td {
+    max-width: 400px;
+    padding: 5px 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.productImgBox{
+    background: url(../images/productimg.jpg) no-repeat;
+    height: 50px;
+    width: 100%;
+}
+
+.edit {
+    display: block;
+    width: 35px;
+    background-color: #577cce4d;
+}
+
+.del {
+    display: block;
+    width: 35px;
+    background-color: #f33131bd;
+}
