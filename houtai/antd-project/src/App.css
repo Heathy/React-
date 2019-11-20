@@ -1,5 +1,5 @@
 .reacticon{
-    background: url(/static/media/KDpgvguMpGfqaHPjicRK.b29324c4.svg) no-repeat;
+    background: url(./assets/images/KDpgvguMpGfqaHPjicRK.svg) no-repeat;
     height: 85;
     position: absolute;
     right: 384px;
@@ -14,10 +14,10 @@
 }
 
 .antdicon {
-    background: url(/static/media/react.8e26f220.svg) no-repeat;
+    background: url(./assets/images/react.svg) no-repeat;
     height: 85;
     position: absolute;
-    left: 837px;
+    left: 0px;
     top: 0px;
     z-index: 1000;
     width: 50px;
@@ -27,3 +27,5 @@
     backdrop-filter: none;
     margin-top: 5px;
 }
+
+     

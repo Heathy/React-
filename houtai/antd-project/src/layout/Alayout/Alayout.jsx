@@ -1,4 +1,4 @@
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Avatar, } from 'antd';
 import React from 'react'
 import {
     HashRouter as Router,
@@ -48,7 +48,7 @@ const Acontent = () => {
                                 <span>
                                     <Icon type="user" />
                                     学员后台
-                    </span>
+                                </span>
                             }
                         >
                             <Menu.Item key="1"><Link to="/nav1/option1">匿名投诉</Link></Menu.Item>
@@ -171,27 +171,40 @@ const Acontent = () => {
 
 
 export default class Alayout extends React.Component {
+    // 数据
     constructor(Props) {
         super()
+        this.state = {}
     }
-    
+    componentDidMount() {
+
+    }
     handle = () => {
         alert('这是蚂蚁金服的UI框架哦');
     }
     handreact = () => {
         alert('这里是react后台管理哦');
     }
+    moving = () => {
+        this.setState({})
+        
+    }
+    Over = () => {
+        let icons = document.getElementsByClassName('Overicon');
+        setTimeout(() => {
+            icons.style.transfrom({translateY: '30deg'})
+        },1000)
+    }
     render() {
-
         return (
             <Router>
                 <Layout>
                     <Header className="header">
                         <div className="logo" />
-                        <div className="reacticon" onClick={this.handle}>
+                        <div className="reacticon" onClick={this.handle.bind(this)}>
                             <img src="../../assets/images/KDpgvguMpGfqaHPjicRK.svg" alt="" />
                         </div>
-                        <div className="antdicon" onClick={this.handreact}>
+                        <div className="antdicon" onClick={this.handreact.bind(this)} onMouseMove={this.moving.bind(this)}>
                             <img src="../../assets/images/tXlLQhLvkEelMstLyHiN.svg" alt="" />
                         </div>
                         <Menu
@@ -209,7 +222,28 @@ export default class Alayout extends React.Component {
                             <Menu.Item key="3">
                                 <Link to="/nav3">成绩管理</Link>
                             </Menu.Item>
+
                         </Menu>
+
+                        <Icon type="fullscreen" style={{
+                            float: 'right',
+                            zIndex: '1004',
+                            fontSize: '48px'
+                        }} />
+                        <Avatar className='Overicon' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574231935876&di=e546acd471396c95dbd8e3f46d45ee56&imgtype=0&src=http%3A%2F%2Fimg.wxcha.com%2Ffile%2F201809%2F01%2Ffa29d4798a.jpg%3Fdown" style={{
+                            width: '51px',
+                            height: '51px',
+                            float: 'right',
+                            marginTop: '-57px',
+                        }} onMouseOver={this.Over.bind(this)}/>
+                        <div style={{
+                            fontSize: '17px',
+                            float: 'right',
+                            color: '#cccc',
+                            marginTop: '-70px',
+                            marginRight: '-73px'
+                        }}>여왕감심</div>
+
                     </Header>
                     <Switch>
                         <Route path="/nav1">
@@ -221,6 +255,7 @@ export default class Alayout extends React.Component {
                         <Route path="/nav3">
                             <div>nav3</div>
                         </Route>
+
                     </Switch>
                     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
                 </Layout>
